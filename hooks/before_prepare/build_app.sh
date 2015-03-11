@@ -3,6 +3,6 @@
 cd app
 npm install
 bower install
-ember build \
-    --environment=production \
+CORDOVA=true ember build \
     --output-path=../www
+    # --environment=production \
