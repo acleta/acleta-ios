@@ -48,6 +48,7 @@
 		DD61164EFADA44A2A4972DD5 /* GCDWebServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C68F39C2954FF482F3C2B4 /* GCDWebServer.framework */; };
 		5BAC0D34B7404E378BBDF46F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5C4B07A7FD426299E113BF /* WebKit.framework */; };
 		C55920066A314687ADBC2FCC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 810F24835A434FE8BF2B5B59 /* libz.dylib */; };
+		5ECAB07CF1824684A5D1DE70 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = DA05CAAAC1A04EA1AFEBCF00 /* CDVSplashScreen.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +126,8 @@
 		D0C68F39C2954FF482F3C2B4 /* GCDWebServer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "GCDWebServer.framework"; path = "Acleta/Plugins/com.telerik.plugins.wkwebview/GCDWebServer.framework"; sourceTree = "<group>"; };
 		AF5C4B07A7FD426299E113BF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "WebKit.framework"; path = "System/Library/Frameworks/WebKit.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
 		810F24835A434FE8BF2B5B59 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libz.dylib"; path = "usr/lib/libz.dylib"; sourceTree = SDKROOT; fileEncoding = 4; };
+		DA05CAAAC1A04EA1AFEBCF00 /* CDVSplashScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVSplashScreen.m"; path = "org.apache.cordova.splashscreen/CDVSplashScreen.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		A39B91D351484691B4675F87 /* CDVSplashScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVSplashScreen.h"; path = "org.apache.cordova.splashscreen/CDVSplashScreen.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,6 +243,8 @@
 				4AD3CE8D7C0B48A5B57459A6 /* ReroutingUIWebView.h */,
 				795750146DA846A083FB4919 /* CDVWebViewOperationsDelegate.h */,
 				F974D02CD6A24757979B21DB /* CDVWebViewUIDelegate.h */,
+				DA05CAAAC1A04EA1AFEBCF00 /* CDVSplashScreen.m */,
+				A39B91D351484691B4675F87 /* CDVSplashScreen.h */,
 			);
 			name = Plugins;
 			path = Acleta/Plugins;
@@ -435,6 +440,7 @@
 				0ED5E066B072465FA2A6A457 /* ReroutingUIWebView.m in Sources */,
 				A21DE4CF5BA446B880CC000A /* CDVWebViewOperationsDelegate.m in Sources */,
 				82369C459CC64164B2FBA530 /* CDVWebViewUIDelegate.m in Sources */,
+				5ECAB07CF1824684A5D1DE70 /* CDVSplashScreen.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

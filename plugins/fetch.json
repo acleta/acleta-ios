@@ -10,5 +10,11 @@
             "type": "registry",
             "id": "com.telerik.plugins.wkwebview"
         }
+    },
+    "org.apache.cordova.splashscreen": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.splashscreen"
+        }
     }
 }
