@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		0ED5E066B072465FA2A6A457 /* ReroutingUIWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BD3226A1E2417094EF0BD2 /* ReroutingUIWebView.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
@@ -318,6 +319,7 @@
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
 				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+				CE70AD0D1AB2118800A92BD3 /* Set bundle version to current git revision */,
 			);
 			buildRules = (
 			);
@@ -431,6 +433,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "cordova/lib/copy-www-build-step.sh";
+			showEnvVarsInLog = 0;
+		};
+		CE70AD0D1AB2118800A92BD3 /* Set bundle version to current git revision */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Set bundle version to current git revision";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "REVISION=$(git rev-parse --short HEAD)\nVERSION=$(/usr/libexec/PlistBuddy -c \"Print :CFBundleShortVersionString\" \"$BUILT_PRODUCTS_DIR/$INFOPLIST_PATH\")\nBUILD_NUMBER=$(git rev-list HEAD | wc -l | tr -d ' ')\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $VERSION.$BUILD_NUMBER\" \"$BUILT_PRODUCTS_DIR/$INFOPLIST_PATH\"\n# /usr/libexec/PlistBuddy -c \"Set :VersionHash $REVISION\" \"$BUILT_PRODUCTS_DIR/$INFOPLIST_PATH\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
