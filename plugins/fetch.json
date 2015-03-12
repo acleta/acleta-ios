@@ -4,5 +4,11 @@
             "type": "registry",
             "id": "org.apache.cordova.statusbar"
         }
+    },
+    "com.telerik.plugins.wkwebview": {
+        "source": {
+            "type": "registry",
+            "id": "com.telerik.plugins.wkwebview"
+        }
     }
 }
